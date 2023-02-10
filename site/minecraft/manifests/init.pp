@@ -1,9 +1,9 @@
-class minecraft {
+class minecraft (
 
-  $jar_url     = 'https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar'
-  $java_url    = 'https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm'
-  $install_dir = '/opt/minecraft'
-
+  $jar_url     = 'https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar',
+  $java_url    = 'https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.rpm',
+  $install_dir = '/opt/minecraft',
+){
   file { $install_dir:
     ensure => directory,
   }
